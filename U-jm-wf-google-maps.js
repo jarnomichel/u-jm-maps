@@ -203,7 +203,7 @@ function udeslyInitMap() {
                     .split(",")
                     .map((a) => +a.trim()),
                 c = a.querySelector('[marker="icon"]').getAttribute("src"),
-                d = a.querySelector('[marker="label"]').getText(),
+                d = a.querySelector('[marker="label"]').getAttribute("src"),
                 e = a.querySelector('[marker="content"]').outerHTML;
             r.push({ icon: c, label: d, content: e, position: { lat: b[0], lng: b[1] } });
         });
