@@ -233,8 +233,8 @@ function udeslyInitMap() {
                 c.addListener(q, () => {
                     b.open(s, c);
                 });
-                c.addListener(marker, 'mouseout', function(){
-                    b.close(s, c);
+                addListener(c, 'mouseout', function(){
+                    b.close();
                  });
         });
     });
